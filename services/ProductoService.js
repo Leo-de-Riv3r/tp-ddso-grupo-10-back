@@ -6,7 +6,7 @@ import { Producto } from '../models/entities/Producto.js'
 import mongoose, { mongo, Mongoose } from 'mongoose'
 import { Categoria } from '../models/entities/Categoria.js'
 import expressAsyncHandler from 'express-async-handler'
-import { uploadToS3 } from './s3Service.js'
+import { uploadToS3 } from './S3Service.js'
 import { NotAuthorizedError } from '../errors/AuthErrors.js'
 export class ProductoService {
   constructor(productoRepo, categoriaRepo, usuarioRepo) {
